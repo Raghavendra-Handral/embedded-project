@@ -1,4 +1,4 @@
-PROJ_NAME = Seat Heater
+PROJ_NAME = Heater
 
 BUILD_DIR = Build
 
