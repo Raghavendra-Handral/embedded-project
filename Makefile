@@ -32,9 +32,7 @@ endif
 .PHONY:all analysis clean doc
 
 # To Create Hex file for SimullIDE
-hex: $(BUILD_DIR)
 
-	objcopy -O ihex $(BUILD_DIR)/$(PROJ_NAME).elf output.hex
 
 
 all:$(BUILD_DIR)
