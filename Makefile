@@ -31,6 +31,12 @@ endif
 # Command to make to consider these names as targets and not as file names in folder
 .PHONY:all analysis clean doc
 
+# To Create Hex file for SimullIDE
+hex: $(BUILD_DIR)
+
+	objcopy -O ihex $(BUILD_DIR)/$(PROJ_NAME).elf output.hex
+
+
 all:$(BUILD_DIR)
 # Compile the code and generate the ELF file
 	$(CC) -g -Wall -Os -mmcu=atmega328  $(INC) $(SRC) -o $(call FixPath,$(BUILD_DIR)/$(PROJ_NAME).elf)

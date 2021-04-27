@@ -48,12 +48,12 @@ int main()
         if(!(PIND&(1<<PD0)) && !(PIND&(2<<PD0)))
         {
             PORTB |= (1<<PB0); //Led On
-            _delay_ms(200);
+            
         }
         else
         {
            PORTB &= ~(1<<PB0); //Led Off
-           _delay_ms(100);
+           
         }
     }
     return 0;
