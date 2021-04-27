@@ -1,4 +1,4 @@
-PROJ_NAME = Blinky
+PROJ_NAME = Seat Heater
 
 BUILD_DIR = Build
 

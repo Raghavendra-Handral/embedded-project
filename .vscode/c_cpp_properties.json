@@ -22,7 +22,7 @@
             "intelliSenseMode": "${default}",
             "cStandard": "c11",
             "cppStandard": "c++14",
-            "compilerPath": "c:\\WinAVR-20100110\\avr\\bin\\gcc.exe",
+            "compilerPath": "",
             "includePath": [],
             "compilerArgs": []
         }
