@@ -35,7 +35,7 @@ char activity3 (uint16_t ADCvalue)
     /* Declare and initialise variables*/
     char temp = 0;
 
-    if((ADCvalue>=0) && (ADCvalue<=209)){
+    if(ADCvalue<=209){
 
         OCR1A = 205; 
         temp = 20;
