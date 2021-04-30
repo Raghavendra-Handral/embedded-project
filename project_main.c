@@ -9,10 +9,13 @@
  * 
  */
 
-#include "project_config.h"
 
-#include "user_utils.h"
-#include "Header.h"
+
+#include "activity_1.h"
+#include "activity_2.h"
+#include "activity_3.h"
+#include "activity_4.h"
+
 
 
 #include <avr/delay.h>
@@ -40,21 +43,19 @@ void peripheral_init(void)
  */
 int main()
 {
+    uint16_t Temp=0;
+    char TempData;
     /* Initialize Peripherals */
 	peripheral_init();
 
     while(1)
     {
-        if(!(PIND&(1<<PD0)) && !(PIND&(2<<PD0)))
-        {
-            PORTB |= (1<<PB0); //Led On
-            
-        }
-        else
-        {
-           PORTB &= ~(1<<PB0); //Led Off
-           
-        }
+        while (activity1());
+        Temp =     activity2(0);
+        TempData = activity3(Temp);
+                   activity4(TempData);
+
+        
     }
     return 0;
 }
